@@ -1,0 +1,107 @@
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about__head {
+  margin-bottom: 20px;
+}
+
+.about__text {
+  margin-bottom: 47px;
+  padding-right: 535px;
+}
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
+  width: calc(870 / 1770 * 100%);
+}
+
+.about__card {
+  flex-grow: 1;
+}
+
+.card-detail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 870px;
+  min-height: 622px;
+  background-image: url(../img/about-card.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about__card-info {
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 196px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.about__card-text {
+  padding-right: 139px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--white-color);
+}
+
+.card-top {
+  background-image: url(../img/about-card-top.svg);
+}
+
+.card-bot {
+  background-image: url(../img/about-card-bot.svg);
+}
+
+.card-right {
+  display: flex;
+  max-width: 870px;
+  min-height: 295px;
+  padding: 65px 115px 65px 60px;
+  border: 1px solid #cacaca;
+  background-color: var(--white-color);
+  background-repeat: no-repeat;
+  background-size: 0;
+}
+
+.card-right::before {
+  content: "";
+  align-self: flex-start;
+  flex-shrink: 0;
+  margin-right: 50px;
+  width: calc(190 / (870 - 115 - 60) * 100%);
+  padding-top: calc(165 / (870 - 115 - 60) * 100%);
+  background-image: inherit;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.card-right:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.about__card-head {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: var(--grey-color);
+}
+
+.about__text-right {
+  margin-top: 8px;
+}

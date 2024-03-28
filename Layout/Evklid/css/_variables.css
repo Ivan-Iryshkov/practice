@@ -1,0 +1,18 @@
+
+/*colors*/
+:root {
+  --black-color: #000;
+  --dark-bg: #222;
+  --grey-color: #333;
+  --grey: #666;
+  --orange-color: #FF9900;
+  --light: #CACACA;
+  --mandarin-color: #E1670E;
+  --grey-blue: #45719c;
+  --orange-opacity: #ff9900b3;
+  --white-color: #fff;
+
+
+/*durations*/
+  --short: 0.3s;
+}

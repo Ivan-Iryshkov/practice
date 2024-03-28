@@ -1,0 +1,99 @@
+@media (any-hover: hover) {
+  .btn:hover {
+  background-color: var(--orange-opacity);
+  cursor: pointer;
+}
+
+.about__btn:hover {
+  background-color: var(--orange-color);
+}
+
+.how__detail-btn_right:hover {
+  border-color: var(--grey);
+  color: var(--white-color);
+  background-color: var(--grey);
+}
+
+}
+
+.reset-btn {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 38px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: var(--white-color);
+  outline: none;
+  background-color: var(--orange-color);
+  transition-timing-function: ease;
+  transition-duration: var(--short);
+  transition-property: background-color, color, border-color;
+}
+
+.btn:focus {
+  background-color: var(--orange-opacity);
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: var(--mandarin-color);
+}
+
+.project-card__button {
+  padding: 25px 39px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.about__btn {
+  padding: 17px 35px;
+  border: 3px solid var(--orange-color);
+  background-color: transparent;
+}
+
+.about__btn:focus {
+  background-color: var(--orange-color);
+}
+
+.about__btn:active {
+  border-color: var(--mandarin-color);
+  background-color: var(--mandarin-color);
+}
+
+.how__detail-btn_right {
+  border: 1px solid var(--grey-color);
+  font-weight: 400;
+  color: var(--grey-color);
+  background-color: transparent;
+}
+
+.how__detail-btn_right:focus {
+  border-color: var(--grey);
+  color: var(--white-color);
+  background-color: var(--grey);
+}
+
+.how__detail-btn_right:active {
+  border-color: var(--black-color);
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.footer__btn {
+  margin-right: 20px;
+  padding: 19px 52px;
+  border: none;
+}
+
+.burger {
+  display: none;
+}
+

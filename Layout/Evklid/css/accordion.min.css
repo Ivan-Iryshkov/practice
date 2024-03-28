@@ -1,0 +1,47 @@
+
+.ac .ac-header {
+  margin: 0;
+  padding: 0;
+}
+
+
+.ac .ac-panel {
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
+}
+.ac .ac-panel .ac-text {
+  font: 15px/24px Arial, sans-serif;
+  color: #111;
+  padding: 10px;
+  margin: 0;
+}
+.ac.js-enabled .ac-panel {
+  visibility: hidden;
+}
+.ac.is-active .ac-panel {
+  visibility: visible;
+}
+
+.ac-text:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.ac.is-active {
+  border: none;
+}
+
+.ac.ac.is-active .faq__info::after {
+  transform: rotate(45deg);
+}
+
+.ac.ac.is-active .faq__info::before {
+  transform: rotate(-45deg);
+}
+
+.faq__info::after,
+.faq__info::before {
+  transition-property: transform;
+  transition-duration: .4s;
+  transition-timing-function: ease;
+}

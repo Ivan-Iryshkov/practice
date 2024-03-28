@@ -1,0 +1,111 @@
+.faq {
+  margin-bottom: 90px;
+}
+
+.faq__head {
+  margin-bottom: 42px;
+}
+
+.faq__item {
+  position: relative;
+}
+
+.faq__btn {
+  position: relative;
+  width: 100%;
+  margin-top: -1px;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  padding-left: 1px;
+  border: none;
+  border-bottom: 1px solid var(--light);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--grey-color);
+  text-align: left;
+  background-color: transparent;
+  transition-timing-function: ease;
+  transition-duration: var(--short);
+  transition-property: color, border-color;
+}
+
+.faq__item:first-child .faq__btn {
+  border-top: 1px solid var(--light);
+}
+
+.faq__item:not(:first-child) .faq__btn {
+  border-top: 1px solid transparent;
+}
+
+.faq__item .faq__btn:focus {
+  border-color: var(--orange-color);
+  color: var(--orange-color);
+  outline: none;
+}
+
+
+.faq__info {
+  position: absolute;
+  top: 1.7em;
+  right: 0;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #ececec;
+  cursor: pointer;
+  transition: color, background-color var(--short) ease;
+  z-index: -1;
+}
+
+.faq__info::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 31px;
+  height: 1px;
+  background-color: #666666;
+  transition: color, background-color var(--short) ease;
+}
+
+.faq__info::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 31px;
+  height: 1px;
+  background-color: #666666;
+  transition: color, background-color var(--short) ease;
+  transform: rotate(90deg);
+}
+
+.faq__btn:focus + .faq__info {
+  background-color: var(--orange-color);
+}
+
+.faq__btn:focus + .faq__info::after,
+.faq__btn:focus + .faq__info::before {
+  background-color: var(--white-color);
+}
+
+
+@media (any-hover: hover) {
+  .faq__item:hover .faq__btn {
+    border-color: var(--orange-color);
+    color: var(--orange-color);
+    cursor: pointer;
+  }
+
+  .faq__item:hover .faq__info {
+    background-color: var(--orange-color);
+  }
+
+  .faq__item:hover .faq__info::before,
+  .faq__item:hover .faq__info::after {
+    background-color: var(--white-color);
+}
+
+}

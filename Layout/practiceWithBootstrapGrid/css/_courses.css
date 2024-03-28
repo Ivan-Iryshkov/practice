@@ -1,0 +1,198 @@
+.courses {
+   padding-top: 76px;
+   padding-bottom: 50px;
+   background-color: var(--white);
+}
+
+.courses__card {
+   position: relative;
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 210px 30px 30px 30px;
+   border-radius: 20px;
+   background-color: #edf0f9;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.courses__card_4d {
+   background-image: url(../img/courses-4d.jpg);
+}
+
+.courses__card_blender {
+   background-image: url(../img/courses-Blender.jpg);
+}
+
+.courses__card_3ds {
+   background-image: url(../img/courses-3dmax.jpg);
+}
+
+.courses__card_zb {
+   background-image: url(../img/courses-Zbrush.jpg);
+}
+
+.courses__head {
+   margin-bottom: 24px;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 40px;
+   color: #212133;
+}
+
+.courses__point-head {
+   margin-bottom: 6px;
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 150%;
+   color: #212133;
+}
+
+.courses__card-text {
+   margin-bottom: 48px;
+}
+
+.courses__list-point {
+   display: flex;
+   margin-bottom: 30px;
+   flex-grow: 1;
+}
+
+.courses__btn {
+   padding: 21px 57px;
+}
+
+.courses__time-teach {
+   position: absolute;
+   top: 10px;
+   right: 5px;
+   padding-left: 30px;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 19px;
+   color: var(--white);
+   background-image: url(../img/courses-time-teach.svg);
+   background-repeat: no-repeat;
+   background-position-y: center;
+}
+
+@media (max-width: 991px) {
+   .courses__card_4d {
+      background-image: url(../img/4d@768.jpg);
+   }
+
+   .courses__card_blender {
+      background-image: url(../img/Blender@768.jpg);
+   }
+
+   .courses__card_3ds {
+      background-image: url(../img/3dmax@768.jpg);
+   }
+
+   .courses__card_zb {
+      background-image: url(../img/Zbrush@768.jpg);
+   }
+
+   .courses__card-text {
+      margin-bottom: 28px;
+   }
+
+   .courses__btn {
+      padding: 21px 54px;
+   }
+
+   .courses__time-teach {
+      top: 12px;
+      right: 11px;
+      padding-left: 30px;
+      background-position-y: center;
+   }
+
+   .courses__point-head {
+      margin-bottom: 7px;
+   }
+}
+
+@media (max-width: 767px) {
+   .courses__card_4d {
+      background-image: url(../img/4d@576.jpg);
+   }
+
+   .courses__card_blender {
+      background-image: url(../img/Blender@576.jpg);
+   }
+
+   .courses__card_3ds {
+      background-image: url(../img/3dmax@576.jpg);
+   }
+
+   .courses__card_zb {
+      background-image: url(../img/Zbrush@576.jpg);
+   }
+
+   .courses__btn {
+      padding: 21px 46px;
+   }
+
+   .courses__point-head {
+      margin-bottom: 10px;
+      line-height: 23px;
+   }
+
+   .courses__card-text {
+      margin-bottom: 33px;
+   }
+
+   .courses {
+      padding-bottom: 48px;
+   }
+}
+
+@media (max-width: 575px) {
+   .courses {
+      padding-top: 45px;
+      padding-bottom: 19px;
+   }
+
+   .courses__card_4d {
+      background-image: url(../img/4d@320.jpg);
+   }
+
+   .courses__card_blender {
+      background-image: url(../img/Blender@320.jpg);
+   }
+
+   .courses__card_3ds {
+      background-image: url(../img/3dmax@320.jpg);
+   }
+
+   .courses__card_zb {
+      background-image: url(../img/Zbrush@320.jpg);
+   }
+
+   .courses__btn {
+      padding: 21px 55px;
+   }
+
+   .courses__head {
+      margin-bottom: 29px;
+      font-size: 20px;
+      line-height: 20px;
+   }
+
+   .courses__card-text {
+      margin-bottom: 80px;
+   }
+
+   .courses__card {
+      min-height: 653px;
+      padding-top: 340px;
+   }
+}
+
+@media (max-width: 370px) {
+   .courses__card {
+      padding-top: 210px;
+   }
+}

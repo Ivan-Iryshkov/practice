@@ -1,0 +1,54 @@
+
+.project {
+  margin-bottom: 100px;
+}
+
+.project-card {
+  position: relative;
+  padding: 98px 80px;
+}
+
+.project-card__info {
+  position: relative;
+  z-index: 11;
+  max-width: 840px;
+}
+
+.project-card__heading {
+  margin-bottom: 24px;
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 85px;
+  color: var(--white-color);
+}
+
+.project-card__excerpt {
+  margin-top: 0;
+  margin-bottom: 89px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: var(--white-color);
+}
+
+.project-card__slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(69, 113, 156);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.project-card__pagination {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+
+  appearance: none;
+}
+

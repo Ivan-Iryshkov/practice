@@ -1,0 +1,44 @@
+body {
+   min-width: 320px;
+   margin: 0;
+   font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+   margin: 0;
+}
+
+li {
+   list-style: none;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+p {
+   margin: 0;
+}
+
+.info-text {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   color: var(--gray);
+}
+
+img {
+   border-style: none;
+}
+
+picture {
+   width: inherit;
+}

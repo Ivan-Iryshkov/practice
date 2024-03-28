@@ -1,0 +1,125 @@
+@media (max-width: 1280px) {
+  .burger {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 23px;
+    color: var(--black-color);
+    cursor: pointer;
+    z-index: 20;
+ }
+
+ .burger:focus-visible {
+    outline: none;
+ }
+
+ .burger-line {
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 3px;
+    background-color: currentColor;
+    transform: translateX(-50%);
+    transition: top .3s ease, bottom .3s ease, transform .3s ease;
+ }
+
+ .burger-line:nth-child(1) {
+    top: 0;
+ }
+
+ .burger-line:nth-child(3) {
+    bottom: 0;
+ }
+
+ .burger-line:nth-child(2) {
+    top: 10px;
+ }
+
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transition-property: transform, visibility;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(-120%);
+    padding: 170px 50px;
+    width: 420px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    font-size: 24px;
+    line-height: 29px;
+    background-color: var(--white-color);
+    box-shadow: 0px 5px 40px 0px #0000001A;
+    z-index: 15;
+    overflow-y: auto;
+    visibility: hidden;
+  }
+
+  .header__list-link {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 700;
+  }
+
+  .header__list--active {
+    display: block;
+    transform: none;
+    visibility: visible;
+  }
+
+
+  .header__list-point:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  .burger--active
+  .burger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger--active
+  .burger-line:nth-child(1) {
+    transform: rotate(45deg);
+    top: 25%;
+    transition-property: top, transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+  }
+
+  .burger--active
+  .burger-line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 25%;
+    transition-property: top, transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+  }
+
+  .burger--active {
+    transform: translateX(-10px);
+  }
+
+  .stop-scroll {
+    overflow: hidden;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  .header__list {
+    padding: 78px 15px;
+    width: 320px;
+  }
+
+  .header__list-link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .header__list-point:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}

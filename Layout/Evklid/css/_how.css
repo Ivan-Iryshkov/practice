@@ -1,0 +1,99 @@
+
+.how {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.how__head {
+  margin-bottom: 50px;
+}
+
+
+.how__slider {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.how__item {
+  margin-right: 85px;
+}
+
+.how__item:last-child {
+  margin-right: 0;
+}
+
+.how__btn.active {
+  color: var(--mandarin-color);
+}
+
+.how__btn {
+  transition: color var(--short) ease;
+}
+
+
+.how__btn:focus:not(:hover):not(:active) {
+  outline: 2px solid var(--orange-color);
+  outline-offset: 3px;
+}
+
+.how__btn:active {
+  color: var(--mandarin-color);
+}
+
+.how__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.how__images-wrap {
+  width: calc(870 / 1770 * 100%);
+  padding-top: 5px;
+}
+
+.how__image {
+  display: block;
+  width: 100%;
+}
+
+.how__info {
+  width: calc(760 / 1770 * 100%);
+}
+
+.how__head-info {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.how__text-info {
+  margin-bottom: 47px;
+}
+
+.how__btn-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -32px;
+}
+
+.how__detail-btn {
+  margin-bottom: 32px;
+}
+
+.how__detail-btn:not(:last-child) {
+  margin-right: 32px;
+}
+
+
+@media (any-hover: hover) {
+  .how__btn:hover {
+    color: var(--orange-color);
+    outline: none;
+    cursor: pointer;
+  }
+}
